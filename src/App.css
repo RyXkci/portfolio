@@ -1,0 +1,49 @@
+:root {
+  --main-200: #f1f1e6;
+  --main-700: #073B4C;
+  --accent-300: #F2962F;
+  --accent-500: #84F9BD;
+}
+
+
+
+.text-light {
+  color: var(--main-200);
+}
+
+.has-text-shadow {
+  text-shadow: 1px 2px 1px rgba(255, 255, 255, .5);
+
+}
+
+.btn {
+  font-family: "Poppins", sans-serif;
+font-weight: bold;
+  background-color: red;
+  padding: 1em .3em;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  width: 120px;
+}
+
+.btn-fill-dark {
+  color: var(--main-700);
+  background-color: var(--accent-500);
+}
+
+.btn-fill-light {
+  color: var(--main-700);
+  background-color: var(--accent-300);
+}
+
+
+
+
+@media screen and (min-width: 798px) {
+  btn {
+    font-size: 1.7rem;
+
+  }
+}
