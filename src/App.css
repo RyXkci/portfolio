@@ -5,7 +5,20 @@
   --accent-500: #84F9BD;
 }
 
+body {
+  background: var(--accent-500);
+  line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+}
 
+.title-dark {
+  font-family: "Poppins", sans-serif;
+  color: var(--accent-500);
+}
+
+.text-dark {
+  color: var(--accent-500);
+}
 
 .text-light {
   color: var(--main-200);
@@ -16,16 +29,28 @@
 
 }
 
+.has-box-shadow {
+  box-shadow: 0 0 1px rgba(0, 0, 0, .3);
+}
+
 .btn {
   font-family: "Poppins", sans-serif;
 font-weight: bold;
-  background-color: red;
   padding: 1em .3em;
   border-radius: 10px;
   font-size: 1.5rem;
   text-transform: uppercase;
   text-align: center;
   width: 120px;
+}
+
+.cta-btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1.5em .5em;
 }
 
 .btn-fill-dark {
@@ -38,8 +63,17 @@ font-weight: bold;
   background-color: var(--accent-300);
 }
 
+.btn-ghost-dark {
+  background-color: none;
+  color: var(--main-700);
+  border: 2px solid var(--accent-500);
+}
 
-
+.contained {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 @media screen and (min-width: 798px) {
   btn {

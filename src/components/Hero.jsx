@@ -46,7 +46,7 @@ export default function Hero() {
         )}
 
         <p className="hero__text text-light">
-          Il mio nome è Ricardo Bozzi è benvenuto sul mio sito personale
+          Il mio nome è Ricardo Bozzi e benvenuti sul mio sito personale
         </p>
 
         <div className="hero__buttons">

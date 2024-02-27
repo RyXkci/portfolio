@@ -4,6 +4,7 @@ import './App.css'
 
 // COMPONENTS //
 import Hero from './components/Hero';
+import About from "./components/About";
 
 function App() {
   
@@ -12,6 +13,7 @@ function App() {
     <>
      <BrowserRouter>
      <Hero />
+     <About />
      </BrowserRouter>
     </>
   )
