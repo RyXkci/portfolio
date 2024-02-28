@@ -1,0 +1,60 @@
+.projects__title {
+    font-size: clamp(3rem, 4vw, 4.5rem);
+    margin-bottom: 1.3em;
+  }
+
+.projects-section {
+    background-color: var(--main-700);
+    text-align: center;
+}
+
+
+.projects-grid {
+    display: grid;
+    gap: 3em;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-rows: 120px;
+    grid-auto-flow: dense;
+}
+
+.project-light {
+    background-color: var(--accent-300);
+}
+
+.project-dark {
+    background-color: var(--accent-500);
+}
+.hor {
+    grid-column: span 2;
+}
+
+.ver {
+    grid-row: span 2;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    height: auto;
+}
+
+.project__title {
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    color: var(--main-700);
+}
+
+.project__description {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    color: var(--main-700);
+}
+
+.project__btn {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    color: var(--main-700);
+}

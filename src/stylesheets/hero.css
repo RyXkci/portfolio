@@ -1,6 +1,6 @@
 .hero {
     width: 100%;
-    height: 90svh;
+    height: 100svh;
     padding: 2em;
     background: rgba(7, 59, 76, 1);
     background: linear-gradient(180deg, rgba(242, 150, 47, 1) 5%, rgba(7, 59, 76, 1) 50%);

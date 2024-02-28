@@ -5,6 +5,7 @@ import './App.css'
 // COMPONENTS //
 import Hero from './components/Hero';
 import About from "./components/About";
+import Projects from "./components/Projects";
 
 function App() {
   
@@ -14,6 +15,7 @@ function App() {
      <BrowserRouter>
      <Hero />
      <About />
+     <Projects />
      </BrowserRouter>
     </>
   )

@@ -6,7 +6,7 @@ export default function About() {
       <div className="about__inner contained">
         <div className="about about-left">
           <article className="about__content about-left-content">
-            <h1 className="about__title title-dark">{`{hello world}`}</h1>
+            <h1 className="title about__title title-dark">{`{hello world}`}</h1>
             <p className="about__text text-dark">
               Salve a tutti! Sono un appassionato sviluppatore frontend, nato in
               Inghilterra ma basato in Italia, con una predilezione per
@@ -25,7 +25,7 @@ export default function About() {
         </div>
         <div className="about about-right">
           <article className="about__content about-right-content">
-            <h1 className="about__title title-dark">meetMe()</h1>
+            <h1 className="title about__title title-dark">meetMe()</h1>
             <p className="about__text text-dark">
               Un occhio attento per i dettagli e un amore per il codice pulito
               ed efficiente, conoscenza delle migliori pratiche ed una passione
@@ -39,6 +39,7 @@ export default function About() {
           </div>
         </div>
       </div>
+      <div className="divider"></div>
     </section>
   );
 }
