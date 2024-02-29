@@ -1,0 +1,8 @@
+.contact {
+    height: 100vh;
+    background-color: var(--main-700);
+    position: sticky;
+    top: 0;
+    z-index:100;
+    text-align: center;
+}
