@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 
 import "../stylesheets/hero.css";
 
-import { techs } from "../utils/techs";
+import { techs } from "../utils/imports";
 
 export default function Hero() {
   const [isAnimating, setIsAnimating] = useState(false);

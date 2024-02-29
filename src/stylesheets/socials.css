@@ -1,0 +1,18 @@
+.socials-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+
+.social__logos {
+    display: flex;
+    justify-content: space-around;
+    gap: 3em;
+}
+
+.logo {
+    width: 50px;
+}

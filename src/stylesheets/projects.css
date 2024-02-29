@@ -5,6 +5,7 @@
 
 .projects-section {
     background-color: var(--main-700);
+    padding: 3em;
     text-align: center;
 }
 

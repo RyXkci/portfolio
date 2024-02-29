@@ -16,7 +16,9 @@ body {
   font-size: 4.5rem;
 }
 
-
+.title-black {
+  color: var(--main-700);
+}
 .title-dark {
   color: var(--accent-500);
 }
