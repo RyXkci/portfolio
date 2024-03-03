@@ -9,15 +9,15 @@ const bottomScrollWatcherRef = useRef();
 
 const [isScrolled, setIsScrolled] = useState(false);
 
-useEffect(()=> {
-const bottomScrollObserver = new IntersectionObserver(entries => {
-    entries.forEach((entry) => {
-        console.log(entry.isIntersecting)
-    })
-})
-bottomScrollObserver.observe(bottomScrollWatcherRef.current)
+// useEffect(()=> {
+// const bottomScrollObserver = new IntersectionObserver(entries => {
+//     entries.forEach((entry) => {
+//         console.log(entry.isIntersecting)
+//     })
+// })
+// bottomScrollObserver.observe(bottomScrollWatcherRef.current)
 
-}, [])
+// }, [])
 
     return (
         <>

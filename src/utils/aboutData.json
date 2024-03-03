@@ -1,0 +1,11 @@
+
+{
+    "aboutLeft": {
+        "title": "{hello world}",
+        "content": "Salve a tutti! Sono un appassionato sviluppatore frontend, nato in Inghilterra ma basato in Italia, con una predilezione per JavaScript e React. La mia passione per la programmazione ha preso vita in maniera autodidatta, spingendomi a intraprendere un percorso che mi ha portato a ottenere numerosi certificati in sviluppo frontend e ad acquisire una solida esperienza di tre anni nello sviluppo di siti web e applicazioni web."
+    },
+    "aboutRight": {
+        "title": "meetMe()",
+        "content": "Un occhio attento per i dettagli e un amore per il codice pulito ed efficiente, conoscenza delle migliori pratiche ed una passione che mi spinge sempre ad imparare. Mi trovo bene in ambienti collaborativi e mi piace trasformare problemi complessi in soluzioni eleganti."
+    }
+}

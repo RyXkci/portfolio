@@ -1,6 +1,8 @@
 .about__title {
     margin-bottom: .3em;
+    /* transition: opacity 2s ease-in-out; */
 }
+/*      TRANSITION GOES HERE BECAUSE OVERWRITING THE CLASS ELIMINATED THE TRANSITION */
 
 .about__text {
     font-size: 2rem;
@@ -36,6 +38,19 @@ justify-content: center;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+ .has-fade-animation {
+    opacity: 0;
+
+}
+
+.transition-1 {
+    transition: all 2s ease-in-out;
+}
+
+.faded {
+    opacity: 1;
 }
 
 @media screen and (min-width: 600px) {
