@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 
 import "../stylesheets/hero.css";
 
-import Button from "./Button";
+import Button from "../components/Button";
 
 import { techs } from "../utils/imports";
 

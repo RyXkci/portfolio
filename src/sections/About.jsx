@@ -1,9 +1,10 @@
 import { useState, useEffect, useRef } from "react";
 
-import FadeIn from "./effects/FadeIn";
+import FadeIn from "../components/effects/FadeIn";
+import SlideIn from "../components/effects/SlideIn";
+
 import aboutMeData from "../utils/aboutData.json";
 
-import SlideIn from "./effects/SlideIn";
 
 import "../stylesheets/about.css";
 

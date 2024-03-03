@@ -17,6 +17,9 @@ const animation = !isAnimated ? "has-fade-animation" : "faded transition-1"
          })
      })
     textObserver.observe(textEffectRef.current)
+    return () => {
+        textObserver.disconnect();
+    }
    }, [])
 
 

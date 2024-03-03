@@ -3,12 +3,12 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import './App.css'
 
 // COMPONENTS //
-import Hero from './components/Hero';
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Socials from "./components/Socials";
-import Techs from "./components/Techs";
-import Contact from "./components/Contact";
+import Hero from "./sections/Hero";
+import About from "./sections/About";
+import Projects from "./sections/Projects";
+import Socials from "./sections/Socials";
+import Techs from "./sections/Techs";
+import Contact from "./sections/Contact";
 
 function App() {
   

@@ -11,10 +11,15 @@ useEffect(() => {
     const slideObserver = new IntersectionObserver((entries) => {
 entries.forEach((entry) => {
     setIsAnimated(entry.isIntersecting)
+    
 })
+
     })
     slideObserver.observe(slideRef.current)
-})
+    return () => {
+        slideObserver.disconnect();
+    }
+}, [])
 
 const animated = !isAnimated ? `has-slide-${direction}-animation` : "slide animated transition-2"
     return (
