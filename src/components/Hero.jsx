@@ -2,6 +2,8 @@ import { useState, useEffect, useRef } from "react";
 
 import "../stylesheets/hero.css";
 
+import Button from "./Button";
+
 import { techs } from "../utils/imports";
 
 export default function Hero() {
@@ -50,12 +52,23 @@ export default function Hero() {
         </p>
 
         <div className="hero__buttons">
-          <a href="#" className="btn btn-fill-dark">
+
+          <Button
+          type="btn-sm"
+          style="btn-fill-dark"
+          link="#"
+          content="i miei lavori" />
+          {/* <a href="#" className="btn btn-fill-dark">
             I miei lavori
-          </a>
-          <a href="#" className="btn btn-fill-light">
+          </a> */}
+           <Button
+           type="btn-sm"
+           style="btn-fill-light"
+           link="#"
+           content="su di me" />
+          {/* <a href="#" className="btn btn-fill-light">
             Su di me
-          </a>
+          </a> */}
         </div>
       </div>
     </section>

@@ -13,7 +13,7 @@ body {
 
 .title {
   font-family: "Poppins", sans-serif;
-  font-size: 4.5rem;
+  font-size: clamp(3rem, 7vw, 4.5rem);
 }
 
 .title-black {
@@ -46,20 +46,20 @@ body {
 
 .btn {
   font-family: "Poppins", sans-serif;
-font-weight: bold;
-  padding: 1em .3em;
-  border-radius: 10px;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  text-align: center;
-  width: 120px;
-}
-
-.cta-btn {
-  font-family: "Poppins", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
+}
+
+.btn-sm {
+  padding: 1em .3em;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  width: 120px;
+
+}
+
+.btn-bg {
   font-size: 2rem;
   padding: 1.5em .5em;
 }

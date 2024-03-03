@@ -2,7 +2,7 @@
     margin-bottom: .3em;
     /* transition: opacity 2s ease-in-out; */
 }
-/*      TRANSITION GOES HERE BECAUSE OVERWRITING THE CLASS ELIMINATED THE TRANSITION */
+
 
 .about__text {
     font-size: 2rem;
@@ -22,10 +22,11 @@
     align-items:center;
 }
 
-.about-inner {
+.about__inner {
 display: flex;
 flex-direction: column;
 justify-content: center;
+overflow-x: hidden;
 }
 
 .about__cta {
@@ -40,17 +41,39 @@ justify-content: center;
     justify-content: center;
 }
 
+/*   ANIMATIONS */
+
  .has-fade-animation {
     opacity: 0;
 
 }
 
+.has-slide-left-animation {
+transform: translateX(300px);
+opacity: 0;
+}
+
+.has-slide-right-animation {
+    transform: translateX(-300px);
+    opacity: 0;
+}
+
+
+
 .transition-1 {
     transition: all 2s ease-in-out;
 }
 
+.transition-2 {
+    transition: all 1s ease-in-out;
+}
+
 .faded {
     opacity: 1;
+}
+
+.slide-animated {
+    transform: translate(0);
 }
 
 @media screen and (min-width: 600px) {
