@@ -2,6 +2,11 @@
     margin-bottom: 1.3em;
   }
 
+  .projects__inner {
+    width: 95%;
+    margin: 0 auto;
+  }
+
   .projects__title-span {
     display: block;
   }
@@ -17,7 +22,7 @@
 
 .projects-section {
     background-color: var(--main-700);
-    padding: 3em;
+    padding: 3em 1em;
     text-align: center;
 }
 
@@ -52,6 +57,7 @@
     justify-content: center;
     padding: 1em;
     height: auto;
+    position: relative;
 }
 
 .project__title {
@@ -68,9 +74,65 @@
 
 .project__btn {
     font-family: "Roboto", sans-serif;
-    font-size: 2rem;
+    text-transform: uppercase;
+    font-size: 3rem;
     color: var(--main-700);
 }
+ /* Will sort out when done views and components */
+.project__link-container {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+
+/* .project-dark .project__link-container {
+    background-color: var(--accent-300);
+}
+.project-light .project__link-container {
+    background-color: var(--accent-500);
+} */
+
+/* HOVER EFFECT */
+
+@media(hover: hover) {
+    .project__link-container {
+        position: absolute;
+        height: 90%;
+        width: 30%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: rotate(90deg);
+        opacity: 0;
+        transition: all 250ms ease-in-out;
+    
+    }
+    
+    .project-dark .project__link-container {
+        background-color: var(--accent-300);
+    }
+    .project-light .project__link-container {
+        background-color: var(--accent-500);
+    }
+    
+    .project__link-container:hover, .project__link-container:active {
+        transform: rotateY(0);
+        opacity: 1;
+        width: 90%;
+    
+    }
+    
+
+}
+
 
 
 @media screen and (min-width: 670px) {
