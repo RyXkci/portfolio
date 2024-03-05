@@ -3,12 +3,8 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import './App.css'
 
 // COMPONENTS //
-import Hero from "./sections/Hero";
-import About from "./sections/About";
-import Projects from "./sections/Projects";
-import Socials from "./sections/Socials";
-import Techs from "./sections/Techs";
-import Contact from "./sections/Contact";
+import Home from "./pages/Home";
+import SingleProject from "./pages/SingleProject";
 
 function App() {
   
@@ -16,12 +12,15 @@ function App() {
   return (
     <>
      <BrowserRouter>
-     <Hero />
-     <About />
-     <Projects />
-     <Socials />
-     <Techs />
-     <Contact />
+     <Routes>
+      <Route
+      path="/"
+      element= {<Home />}/>
+
+      <Route 
+      path="/projects/:title"
+      element={<SingleProject />}/>
+     </Routes>
      </BrowserRouter>
     </>
   )

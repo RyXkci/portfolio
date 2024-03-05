@@ -1,12 +1,12 @@
-.hero {
+.home-hero {
     width: 100%;
     height: 100svh;
     padding: 2em;
-    background: rgba(7, 59, 76, 1);
-    background: linear-gradient(180deg, rgba(242, 150, 47, 1) 5%, rgba(7, 59, 76, 1) 50%);
+    /* background: rgba(7, 59, 76, 1);
+    background: linear-gradient(180deg, rgba(242, 150, 47, 1) 5%, rgba(7, 59, 76, 1) 50%); */
 }
 
-.hero__inner {
+.home-hero__inner {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -18,27 +18,27 @@
 
 
 
-.hero__title {
+.home-hero__title {
     font-family: "Poppins", sans-serif;
     font-size: 4rem;
     text-align: center;
 }
 
-.hero__title-small {
+.home-hero__title-small {
     font-size: 3rem;
 }
 
 
-.hero__subtitle {
+.home-hero__subtitle {
     display: block;
 }
 
-.hero__text {
+.home-hero__text {
     text-align: center;
     font-size: 3rem;
 }
 
-.hero__buttons {
+.home-hero__buttons {
     display: flex;
     justify-content: center;
     gap: 2em;
@@ -46,18 +46,18 @@
 }
 
 @media screen and (min-width: 798px) {
-    .hero {
+    .home-hero {
         height: 100vh;
-        background: rgb(7, 59, 76);
-        background: linear-gradient(90deg, rgba(7, 59, 76, 1) 5%, rgba(242, 150, 47, 1) 20%, rgba(7, 59, 76, 1) 50%);
+        /* background: rgb(7, 59, 76);
+        background: linear-gradient(90deg, rgba(7, 59, 76, 1) 5%, rgba(242, 150, 47, 1) 20%, rgba(7, 59, 76, 1) 50%); */
     }
 
-    .hero__inner {
+    .home-hero__inner {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr 1fr;
     }
 
-    .hero__title {
+    .home-hero__title {
         grid-column: 1/2;
         margin-top: 1.3em;
         font-size: 6rem;
@@ -65,15 +65,15 @@
 
     }
 
-    .hero__title-small {
+    .home-hero__title-small {
         font-size: 4rem;
     }
 
-    .hero__text {
+    .home-hero__text {
         grid-column: 3/-1;
     }
 
-    .hero__buttons {
+    .home-hero__buttons {
         grid-column: 3/-1;
         margin-top: 0;
     }

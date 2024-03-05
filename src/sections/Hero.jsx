@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 
-import "../stylesheets/hero.css";
+import "../stylesheets/home-hero.css";
 
 import Button from "../components/Button";
 
@@ -37,21 +37,21 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="hero">
-      <div className="hero__inner contained">
+    <section className="home-hero has-gradient-bg">
+      <div className="home-hero__inner contained">
         {!timeoutSwitch ? (
-          <h1 className="hero__title-small title text-light">{title}</h1>
+          <h1 className="home-hero__title-small title text-light">{title}</h1>
         ) : (
-          <h1 className="hero__title title text-light has-text-shadow">
-            Frontend <span className="hero__subtitle title">Developer</span>
+          <h1 className="home-hero__title title text-light has-text-shadow">
+            Frontend <span className="home-hero__subtitle title">Developer</span>
           </h1>
         )}
 
-        <p className="hero__text text-light">
+        <p className="home-hero__text text-light">
           Il mio nome è Ricardo Bozzi e benvenuti sul mio sito personale
         </p>
 
-        <div className="hero__buttons">
+        <div className="home-hero__buttons">
 
           <Button
           type="btn-sm"

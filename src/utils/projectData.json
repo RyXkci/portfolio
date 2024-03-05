@@ -1,0 +1,67 @@
+[
+    {
+        "title": "smartahol",
+        "slug": "smartahol",
+        "content": "Tristique ut urna elit tempus congue quis tortor scelerisque lacus interdum sed orci condimentum nec adipiscing quis portaest magna varius aliquam mi mi tristique enim eu fusce molestie dolor pellentesque elementum ipsum gravida phasellus nulla sem dolor proin consectetur proin nunc suspendisse morbi accumsan morbi proin gravida leo hendrerit eu.",
+        "techs": "Leo morbi purus vel ex consectetur euismod ipsum nisi leo molestie massa dolor urna placerat ut tristique leo portaest id congue tortor a sem nec.",
+        "challenges": "Nulla nisl hendrerit interdum quam morbi felis a tristique eget nunc nec felis commodo maximus a facilisis sed ac morbi magna consectetur amet aliquam commodo.",
+        "externalLinks": {
+            "gitLink": "#",
+            "appLink": "#"
+        },
+        "direction": "hor",
+        "style": "light"
+    },
+    {
+        "title": "the coloured box game",
+        "slug": "thecolouredboxgame",
+        "content": "Tristique ut urna elit tempus congue quis tortor scelerisque lacus interdum sed orci condimentum nec adipiscing quis portaest magna varius aliquam mi mi tristique enim eu fusce molestie dolor pellentesque elementum ipsum gravida phasellus nulla sem dolor proin consectetur proin nunc suspendisse morbi accumsan morbi proin gravida leo hendrerit eu.",
+        "techs": "Leo morbi purus vel ex consectetur euismod ipsum nisi leo molestie massa dolor urna placerat ut tristique leo portaest id congue tortor a sem nec.",
+        "challenges": "Nulla nisl hendrerit interdum quam morbi felis a tristique eget nunc nec felis commodo maximus a facilisis sed ac morbi magna consectetur amet aliquam commodo.",
+        "externalLinks": {
+            "gitLink": "#",
+            "appLink": "#"
+        },
+        "direction": "ver",
+        "style": "dark"
+    },
+    {
+        "title": "pokémon kanto pokédex",
+        "slug": "pokemonkantopokedex",
+        "content": "Tristique ut urna elit tempus congue quis tortor scelerisque lacus interdum sed orci condimentum nec adipiscing quis portaest magna varius aliquam mi mi tristique enim eu fusce molestie dolor pellentesque elementum ipsum gravida phasellus nulla sem dolor proin consectetur proin nunc suspendisse morbi accumsan morbi proin gravida leo hendrerit eu.",
+        "techs": "Leo morbi purus vel ex consectetur euismod ipsum nisi leo molestie massa dolor urna placerat ut tristique leo portaest id congue tortor a sem nec.",
+        "challenges": "Nulla nisl hendrerit interdum quam morbi felis a tristique eget nunc nec felis commodo maximus a facilisis sed ac morbi magna consectetur amet aliquam commodo.",
+        "externalLinks": {
+            "gitLink": "#",
+            "appLink": "#"
+        },
+        "direction": "hor",
+        "style": "light"
+    },
+    {
+        "title": "dark souls paper rock scissors",
+        "slug": "darksoulspaperrockscissors",
+        "content": "Tristique ut urna elit tempus congue quis tortor scelerisque lacus interdum sed orci condimentum nec adipiscing quis portaest magna varius aliquam mi mi tristique enim eu fusce molestie dolor pellentesque elementum ipsum gravida phasellus nulla sem dolor proin consectetur proin nunc suspendisse morbi accumsan morbi proin gravida leo hendrerit eu.",
+        "techs": "Leo morbi purus vel ex consectetur euismod ipsum nisi leo molestie massa dolor urna placerat ut tristique leo portaest id congue tortor a sem nec.",
+        "challenges": "Nulla nisl hendrerit interdum quam morbi felis a tristique eget nunc nec felis commodo maximus a facilisis sed ac morbi magna consectetur amet aliquam commodo.",
+        "externalLinks": {
+            "gitLink": "#",
+            "appLink": "#"
+        },
+        "direction": "ver",
+        "style": "dark"
+    },
+    {
+        "title": "FEM calcolatrice mance",
+        "slug": "calcolatricemance",
+        "content": "Tristique ut urna elit tempus congue quis tortor scelerisque lacus interdum sed orci condimentum nec adipiscing quis portaest magna varius aliquam mi mi tristique enim eu fusce molestie dolor pellentesque elementum ipsum gravida phasellus nulla sem dolor proin consectetur proin nunc suspendisse morbi accumsan morbi proin gravida leo hendrerit eu.",
+        "techs": "Leo morbi purus vel ex consectetur euismod ipsum nisi leo molestie massa dolor urna placerat ut tristique leo portaest id congue tortor a sem nec.",
+        "challenges": "Nulla nisl hendrerit interdum quam morbi felis a tristique eget nunc nec felis commodo maximus a facilisis sed ac morbi magna consectetur amet aliquam commodo.",
+        "externalLinks": {
+            "gitLink": "#",
+            "appLink": "#"
+        },
+        "direction": "hor",
+        "style": "light"
+    }
+]
