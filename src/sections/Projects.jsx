@@ -26,7 +26,7 @@ export default function Projects() {
            style={project.style}
            title={project.title}
            content={project}
-           link={project.link}/>
+           link={project.slug}/>
          ))}
  
           {/* <Project
