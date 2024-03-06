@@ -40,7 +40,12 @@ const [isScrolled, setIsScrolled] = useState(false);
         
         <div className="scroll-margin"></div>
 
-        <div className="techs-after">
+        <div className="portfolio-info">
+            <div className="portfolio-info__inner contained">
+                <p className="text-black portfolio-info__text">Questo portfolio è stato creato con React con l'utilizzo di "react-router-dom" e file JSON</p>
+                <p className="text-black portfolio-info__text has-lines"><a href="#" className="portfolio-info__link">Clicca qua per vedere la repo su GitHub</a></p>
+                
+            </div>
             </div> 
             <div ref={bottomScrollWatcherRef} className="scroll-watcher-bottom"></div>
         </>

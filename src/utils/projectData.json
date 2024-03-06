@@ -1,39 +1,40 @@
 [
     {
-        "title": "smartahol",
-        "slug": "smartahol",
-        "content": "Tristique ut urna elit tempus congue quis tortor scelerisque lacus interdum sed orci condimentum nec adipiscing quis portaest magna varius aliquam mi mi tristique enim eu fusce molestie dolor pellentesque elementum ipsum gravida phasellus nulla sem dolor proin consectetur proin nunc suspendisse morbi accumsan morbi proin gravida leo hendrerit eu.",
-        "techs": "Leo morbi purus vel ex consectetur euismod ipsum nisi leo molestie massa dolor urna placerat ut tristique leo portaest id congue tortor a sem nec.",
-        "challenges": "Nulla nisl hendrerit interdum quam morbi felis a tristique eget nunc nec felis commodo maximus a facilisis sed ac morbi magna consectetur amet aliquam commodo.",
+        "title": "the coloured boxes game",
+        "slug": "thecolouredboxesgame",
+        "content": "Un minigioco creato in React! Scegli il tuo “livello di difficoltà”, ossia quante scatole e quanti colori (puoi combinare), l’applicazione ti genera una griglia con le scatole che hai deciso, tutte colorate a random  pescando da una lista di colori generati del numero che hai deciso.\n Inizia subito a cliccare su ogni scatola e cambierà colore pescando dai colori generati!\nQuando sono  tutti uguali...hai vinto! Ti dice il tempo che ci hai messo. Ora sta a te battere il tup tempo record! (O scegliere un’altro livello di difficoltà)",
+        "techs": "L’applicazione è stata creata in React utilizzando Vite come bundle. Utilizza css vanilla e struttura mobile-first. \nFa uso di session storage per salvare i tempi nella sessione corrente, così da mostrarli ad ogni giocata.\n La gerarchia dei componenti segue le best practice di React: lo stato vive nel componente più alto necessario ma non di più.\nOgni “scatola” è una propria componente che viene rendered dalla griglia.\nLe funzioni vengono passate come props e fa uso di context per evitare il “prop-drilling” .\nI media query partono tutti dallo schermo mobile, riducendo di molto il codice css ed assicurandone la facilità d’uso per utenti mobile.\nFlexbox e unità come rem ed em per le misure per\nrendere tutto più flessibile e permettere all’utente di ingrandire le misure dei font.",
+        "challenges": "Creare una funzione che viene evocata ad ogni “click” per iterare su tutta la griglia e fare il confronto del colore per verificare se sono tutti uguali.  \nCreare un “cronometro”, ossia una variabile che parte da “0” appena parte l’applicazione, aggiunge 1 ogni secondo e si ferma quando succede il “game over”. In React, un “setInterval” necessita di una ref “useRef” nel quale viene salvato l’interval stesso al fine di fermarlo, simile all’uso del proprio id in vanilla js. \nInoltre, cosa succede quando supera 60? O 1 minuto? Una funzione “utility” che accetta un numero e fa uso di divisione e Javascript modulo per tirarne fuori minuti e secondi. (C’è anche una condizionale per se è “1 minuto” o “più di un minuti”",
         "externalLinks": {
-            "gitLink": "#",
-            "appLink": "#"
+            "gitLink": "https://github.com/RyXkci/coloured-box-game",
+            "appLink": "https://startling-kashata-d5772e.netlify.app/"
         },
         "direction": "hor",
         "style": "light"
     },
     {
-        "title": "the coloured box game",
-        "slug": "thecolouredboxgame",
-        "content": "Tristique ut urna elit tempus congue quis tortor scelerisque lacus interdum sed orci condimentum nec adipiscing quis portaest magna varius aliquam mi mi tristique enim eu fusce molestie dolor pellentesque elementum ipsum gravida phasellus nulla sem dolor proin consectetur proin nunc suspendisse morbi accumsan morbi proin gravida leo hendrerit eu.",
-        "techs": "Leo morbi purus vel ex consectetur euismod ipsum nisi leo molestie massa dolor urna placerat ut tristique leo portaest id congue tortor a sem nec.",
-        "challenges": "Nulla nisl hendrerit interdum quam morbi felis a tristique eget nunc nec felis commodo maximus a facilisis sed ac morbi magna consectetur amet aliquam commodo.",
+        "title": "smartahol",
+        "slug": "smartahol",
+        "content": "Un’applicazione, ideata a Londra, che, dato un quantitativo, una percentuale alcolica ed un prezzo di due o più prodotti alcolici fa i propri calcoli per determinare il prezzo più basso per la percentuale più grande tenendo conto del quantitativo totale.\n  L’utente ha l’opzone di inserire i litri in ml, cl, o l e l’applicazione, prima di fare i calcoli, trasforma tutto in ml utilizzando una funzione utilitaria.",
+        "techs": "L’applicazione è stata creata in React utilizzando Vite come bundle. \nUtilizza css vanilla e struttura mobile-first. \nFa uso di session storage per salvare i tempi nella sessione corrente, così da mostrarli ad ogni giocata. \nLa gerarchia dei componenti segue le best practice di React: lo stato vive nel componente più alto necessario ma non di più. Ogni “scatola” è una proprio componente che viene rendered dalla griglia Le funzioni vengono passate come props e fa uso di context per evitare il “prop-drilling” . \nI media query partono tutti dallo schermo mobile, riducendo di molto il codice css ed assicurandone la facilità d’uso per utenti mobile. \nFlexbox e unità come rem ed em per le misure per \nrendere tutto più flessibile e permettere all’utente di ingrandire le misure dei font. ",
+        "challenges": "Riuscire a trovare un modo per permettere all’utente di riempire il form quante volte vuole significa mantenere tutto in un array in stato per ogni rendering, svuotare il form ogni volta ed avere un boolean che cambia quando viene cliccato il pusante finale, facendo partire una funzione con useEffect.",
         "externalLinks": {
-            "gitLink": "#",
-            "appLink": "#"
+            "gitLink": "https://github.com/RyXkci/smartahol",
+            "appLink": "https://idyllic-genie-6fa829.netlify.app/"
         },
         "direction": "ver",
         "style": "dark"
     },
+
     {
         "title": "pokémon kanto pokédex",
         "slug": "pokemonkantopokedex",
-        "content": "Tristique ut urna elit tempus congue quis tortor scelerisque lacus interdum sed orci condimentum nec adipiscing quis portaest magna varius aliquam mi mi tristique enim eu fusce molestie dolor pellentesque elementum ipsum gravida phasellus nulla sem dolor proin consectetur proin nunc suspendisse morbi accumsan morbi proin gravida leo hendrerit eu.",
-        "techs": "Leo morbi purus vel ex consectetur euismod ipsum nisi leo molestie massa dolor urna placerat ut tristique leo portaest id congue tortor a sem nec.",
-        "challenges": "Nulla nisl hendrerit interdum quam morbi felis a tristique eget nunc nec felis commodo maximus a facilisis sed ac morbi magna consectetur amet aliquam commodo.",
+        "content": "Un Pokèdex! Limitato ai nostalgici primi 151. \nLa mia prima applicazione che fa uso di  Javascript asincrono e l’utilizzo di API esterne. Appena avevo imparato JS asincrono,  fetch volevo mettere alla prova, ho cercato online api gratuite e mi è subito piaciuta l’idea di fare qualcosa con l’API Pokèmon. \nInserisci il nome del pokemon, l’applicazione manda la sua richiesta, prende i dati e li  inserisce nella DOM. Ho anche messo un easter egg divertente per i giocatori: provate  ad inserire un pokemon che non sia fra i primi 151.",
+        "techs": "Questa applicazione è stat creata in vanilla Js e vanilla CSS, senza librerie o framework. Fa uso della fetch api, async/await ed i modi javascript di creare elementi, “aggiungere” dati come figli e mostrare nella DOM.  Fa anche uso di css per animazioni",
+        "challenges": "Essendo la mia prima applicazione che fa uso di async e fetch, diciamo che le sfide sono state svariate, tanti console log, tanti errori iniziali, tante lezioni.\nCome applicazione è stata una lezione vera e propria. \nE’ stata anche una bella lezione CSS: la parte in cui i dati vengono mostrati vive “sotto” alla parte in cui si inseriscono i dati, quindi dei “giochini” con le posizioni “relative” ed “absolute” e z-index. \nOltre a quello le animazioni css per imitare una “tendina”.",
         "externalLinks": {
-            "gitLink": "#",
-            "appLink": "#"
+            "gitLink": "https://github.com/RyXkci/Pokemon-Kanto-Pokedex",
+            "appLink": "https://ryxkci.github.io/Pokemon-Kanto-Pokedex/"
         },
         "direction": "hor",
         "style": "light"
@@ -41,12 +42,12 @@
     {
         "title": "dark souls paper rock scissors",
         "slug": "darksoulspaperrockscissors",
-        "content": "Tristique ut urna elit tempus congue quis tortor scelerisque lacus interdum sed orci condimentum nec adipiscing quis portaest magna varius aliquam mi mi tristique enim eu fusce molestie dolor pellentesque elementum ipsum gravida phasellus nulla sem dolor proin consectetur proin nunc suspendisse morbi accumsan morbi proin gravida leo hendrerit eu.",
-        "techs": "Leo morbi purus vel ex consectetur euismod ipsum nisi leo molestie massa dolor urna placerat ut tristique leo portaest id congue tortor a sem nec.",
-        "challenges": "Nulla nisl hendrerit interdum quam morbi felis a tristique eget nunc nec felis commodo maximus a facilisis sed ac morbi magna consectetur amet aliquam commodo.",
+        "content": "Carta forbici Sasso...stilizzato come un videogioco. Mi era stato incaricato di creare una “script” che imitasse le  funzioalità del gioco carta forbici sasso. Quando l’ho finito mi sono detto “perchè non stilizzarlo” ed ho avuto la  malsana idea di stilizzarlo come un videogioco: “Dark Souls”. \nProva a giocare per vedere cosaa succede quando  vinci o perdi!",
+        "techs": "Vanilla Js e vanilla CSS. Fa uso di tante funzioni utility che vengono evocate con i propri arguments, scritte da essere il più modulari possibili.",
+        "challenges": "Creare lo script è stata la prima parte. Stilizzarlo collegare tutto è stata un’altra.\nNell’applicazione esiste una “barra della vita” che parte da 5 e scende ogni volta che l’utente, o il computer, perde un giro. Una div contente 5 div, che si abbassano di uno utilizzando javascript. Ma, ovviamente, quando si resetta deve riempirsi.\n  Per il “game over” ho creato una funzione che fa un pop up che prende come argomento un testo vincente ed uno perdente.",
         "externalLinks": {
-            "gitLink": "#",
-            "appLink": "#"
+            "gitLink": "https://github.com/RyXkci/Dark-Souls-Paper-Rock-Scissors",
+            "appLink": "https://ryxkci.github.io/Dark-Souls-Paper-Rock-Scissors/"
         },
         "direction": "ver",
         "style": "dark"
@@ -54,12 +55,12 @@
     {
         "title": "FEM calcolatrice mance",
         "slug": "calcolatricemance",
-        "content": "Tristique ut urna elit tempus congue quis tortor scelerisque lacus interdum sed orci condimentum nec adipiscing quis portaest magna varius aliquam mi mi tristique enim eu fusce molestie dolor pellentesque elementum ipsum gravida phasellus nulla sem dolor proin consectetur proin nunc suspendisse morbi accumsan morbi proin gravida leo hendrerit eu.",
-        "techs": "Leo morbi purus vel ex consectetur euismod ipsum nisi leo molestie massa dolor urna placerat ut tristique leo portaest id congue tortor a sem nec.",
-        "challenges": "Nulla nisl hendrerit interdum quam morbi felis a tristique eget nunc nec felis commodo maximus a facilisis sed ac morbi magna consectetur amet aliquam commodo.",
+        "content": "FEM (FrontendMentor) è un sito americano per studenti di sviluppo web frontend che vogliono migliorare le proprie  competenze e simula determinati ambienti di lavoro.\nTi da dei “progetti”, composti da un file di design, un file  con user stories e funzionalità ed un file con testi e stili. Il tuo compito è quello di ricreare il design dato il più simile possibile. Viene caricato, confrontato con il progetto, e viene bocciato o promosso. \nQuesta è una “calcolatrice mance”, si inserisce il prezzo totale, il quantitativo di persone e la percentuale di mancia. Lei ti calcola la mancia per persona ed il totale per persona.",
+        "techs": "Vanilla Js e vanilla CSS. Fa uso di tante funzioni utility che vengono evocate con i propri arguments, scritte da essere il più modulari possibili. ",
+        "challenges": "Ricreare pixel perfect il design dato. Le funzionalità sono calcoli in base all’input ed i risultati vengono messi nella dom in rempo reale. Inoltre ho aggiunto “validazione” del form utilizzando javascript come ulteriore sfida personale, non essendo presente nel design originale.",
         "externalLinks": {
-            "gitLink": "#",
-            "appLink": "#"
+            "gitLink": "https://github.com/RyXkci/FrontEnd-tip-calculator-app",
+            "appLink": "https://ryxkci.github.io/FrontEnd-tip-calculator-app/"
         },
         "direction": "hor",
         "style": "light"

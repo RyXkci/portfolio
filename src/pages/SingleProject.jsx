@@ -7,6 +7,8 @@ import projectData from "../utils/projectData.json";
 import LinksStripe from "../components/LinksStripe";
 import ContactStripe from "../components/ContactStripe";
 
+import { formatText } from "../utils/stringParser";
+
 export default function SingleProject() {
   const { title } = useParams();
 
@@ -25,6 +27,7 @@ export default function SingleProject() {
     setLinks(currentProject.externalLinks)
   }, []);
 
+  // content = formatText(project.content)
 
 
   return (
@@ -39,15 +42,17 @@ export default function SingleProject() {
             <h1 className="project-section__title title-black">{project.title}</h1>
             <article className="project__info">
                 <h1 className="project__info-title title-black">Che cos'è?</h1>
-                <p className="project__info-text text-black">{project.content}</p>
+                   {/* passing the content to a utilitary function ro parse line breaks in to separate paragraphs.
+                   Spits out <p className="project__info-text text-black">{project.key}</p> */}
+                {formatText(project.content)}
             </article>
             <article className="project__info">
                 <h1 className="project__info-title title-black">Di quali tecnologie fa uso?</h1>
-                <p className="project__info-text text-black">{project.techs}</p>
+                {formatText(project.techs)}
             </article>
             <article className="project__info">
                 <h1 className="project__info-title title-black">Le sfide:</h1>
-                <p className="project__info-text text-black">{project.challenges}</p>
+                {formatText(project.challenges)}
             </article>
             
         </div>

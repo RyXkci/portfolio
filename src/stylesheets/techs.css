@@ -75,16 +75,44 @@ background: rgba(242, 150, 47, .5);
     background-color: var(--accent-500);
 }
 
-.techs-after {
-    background-color: rgba(0, 0, 0, .5);
+.portfolio-info{
+    /* background-color: rgba(0, 0, 0, .5); */
+    background-color: var(--accent-300);
     height: 100vh;
     width: 100%;
     position: sticky;
     top: 0;
+    display: grid;
+    place-items: center;
+    text-align: center;
 }
 
-.techs-after-after-test {
-    background-color: var(--accent-300);
-    height: 100vh;
-    width: 100%;
+.portfolio-info__text {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: .5em;
 }
+
+.has-lines {
+    position: relative;
+}
+
+/* .has-lines::before,
+.has-lines::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    background-color: var(--accent-500);
+}
+
+.has-lines::before {
+    width: 50%;
+    left: 25%;
+}
+
+.has-lines::after {
+    bottom: -20px;
+    left: 5%;
+    right: 5%;
+    width:90%;
+} */
