@@ -5,6 +5,11 @@
   --accent-500: #84F9BD;
 }
 
+.sr-only {
+  left: -1000vw;
+  position: absolute;
+}
+
 body {
   background: var(--accent-500);
   line-height: 1.6;

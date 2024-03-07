@@ -5,6 +5,10 @@ import './App.css'
 // COMPONENTS //
 import Home from "./pages/Home";
 import SingleProject from "./pages/SingleProject";
+import Navbar from "./components/Navbar";
+
+import scrollToHashElement from "./utils/ScrollToHashElement";
+import ScrollToHashElement from "./utils/ScrollToHashElement";
 
 function App() {
   
@@ -12,6 +16,8 @@ function App() {
   return (
     <>
      <BrowserRouter>
+     <ScrollToHashElement />
+     <Navbar />
      <Routes>
       <Route
       path="/"

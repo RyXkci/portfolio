@@ -22,7 +22,7 @@ const [isScrolled, setIsScrolled] = useState(false);
     return (
         <>
         <div ref={topScrollWatcherRef} className="scroll-watcher-top"></div>
-        <div className="section techs-section stuck">
+        <div id="techs" className="section techs-section stuck">
             <div className="techs">
                 <div className="techs__list">
                     <p className="techs-list__item">HTML5</p>

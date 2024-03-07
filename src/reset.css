@@ -29,8 +29,7 @@ dd {
     padding: 0;
 }
 
-ul[role='list'],
-ol[role='list'] {
+ul {
     list-style: none;
 }
 
