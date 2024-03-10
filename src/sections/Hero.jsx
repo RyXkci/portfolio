@@ -56,7 +56,7 @@ export default function Hero() {
           <Button
           type="btn-sm"
           style="btn-fill-dark"
-          link="#"
+          link="/#projects"
           content="i miei lavori" />
           {/* <a href="#" className="btn btn-fill-dark">
             I miei lavori
@@ -64,7 +64,7 @@ export default function Hero() {
            <Button
            type="btn-sm"
            style="btn-fill-light"
-           link="#"
+           link="/#about"
            content="su di me" />
           {/* <a href="#" className="btn btn-fill-light">
             Su di me

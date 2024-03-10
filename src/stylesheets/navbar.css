@@ -1,4 +1,33 @@
 .header {
+width: 100%;
+background-color: rgba(0, 0, 0, .5);
+height: 70px;
+position: fixed;
+z-index: 1000;
+}
+
+.nav__list {
+    background: rgba(7, 59, 76, .7);
+    backdrop-filter: blur(2rem);
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    position: fixed;
+    inset: 0 0 0 30%;
+    /* z-index: 1000; */
+    padding: min(30vh, 10rem) 2rem;
+  transition: transform 250ms ease-in-out;
+}
+
+.navigation-closed {
+    transform: translateX(100%);
+}
+
+.navigation-open {
+    transform: translateX(0);
+}
+
+/* .nav__list {
     position: fixed;
     background: rgba(0, 0, 0, .5);
     backdrop-filter: blur(2rem);
@@ -7,20 +36,32 @@
     justify-content: center;
     align-items: center;
     z-index: 9999;
-}
-
-
-.nav__list {
+    transform: translateX(100%);
     display: flex;
     flex-direction: column;
     justify-content: centeR;
     align-items: center;
     gap: 1.3em;
-}
+
+} */
 
 .nav-list-item {
     font-size: 3rem;
     color: var(--main-200);
+}
+
+/*   HAMBURGER */
+
+.mobile-nav-toggle {
+position: absolute;
+top: 2em;
+right: 2em;
+z-index: 9999;
+}
+
+.svg-inline--fa {
+    color: var(--main-200);
+    font-size: 2rem;
 }
 
 
@@ -28,90 +69,9 @@
 
 
 @media screen and (min-width: 798px) {
-.header {
-    position: fixed;
-    z-index: 9999;
-    inset: 0;
-    bottom: 90%;
-    right:0;
-    height: 30px;
-    background-color: rgba(0, 0, 0, .5);
-    backdrop-filter: blur(1rem);
-    transition: height 200ms ease-in-out;
-    color: var(--main-200);
-}
-
 .nav__list {
-    flex-direction: row;
-    align-items: center;
-    gap: 3em;
+    inset: 0 0 0 70%;
 }
-
-.primary-navigation {
-    scale: 0;
-    opacity: 0;
-    transition: all 250ms ease-in-out;
-     transform-origin: right;
-}
-
-.header:hover {
-    height: auto;
-}
-.header:hover >.primary-navigation {
-    scale: 1;
-    opacity: 1;
-}
-
-.header:hover > span {
-    opacity: 0;
-}
-
-.nav-list-item {
-    color: var(--main-200);
-}
-
-
-
-
-/*  BUTTON */
-
-.hamburger-visible {
-    margin-right: 3em;
-    display: block;
-    position: relative;
-}
-
-
-.hamburger-visible-light {
-    background-color: var(--main-200);
-    order: 2;
-}
-
-.hamburger-visible,
-.hamburger-visible::before,
-.hamburger-visible::after {
-    background-color: var(--main-700);
-    width: 2em;
-    height: 2px;
-    border-radius: 50px;
-}
-
-.hamburger-visible::before,
-.hamburger-visible::after {
-    content: "";
-    position: absolute;
-}
-
-.hamburger-visible::before {
-    bottom: 10px;
-    left: 0;
-}
-
-.hamburger-visible::after {
-    top: 10px;
-    right: 0;
-}
-
 
 
 }

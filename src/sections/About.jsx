@@ -11,7 +11,7 @@ import "../stylesheets/about.css";
 export default function About() {
   console.log(aboutMeData);
   return (
-    <section className="about about-section">
+    <section id="about" className="about about-section">
       <div className="about__inner contained">
         <div className="about about-left">
           <article className="about__content about-left-content">
