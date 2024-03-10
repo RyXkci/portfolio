@@ -1,9 +1,14 @@
 .header {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    place-items: center;
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(2rem);
+    inset: 0 0 0 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
 }
+
 
 .nav__list {
     display: flex;
@@ -15,7 +20,7 @@
 
 .nav-list-item {
     font-size: 3rem;
-    color: var(--main-700);
+    color: var(--main-200);
 }
 
 
@@ -25,40 +30,41 @@
 @media screen and (min-width: 798px) {
 .header {
     position: fixed;
-    top: 0;
-}
-.header.open {
-    height: auto;
-    background-color: var(--main-700);
-    backdrop-filter: blur(1rem);
-
-}
-
-.header.closed {
+    z-index: 9999;
+    inset: 0;
+    bottom: 90%;
+    right:0;
+    height: 30px;
     background-color: rgba(0, 0, 0, .5);
-    height: 15px;
-    display: flex;
-    justify-content: end;
+    backdrop-filter: blur(1rem);
+    transition: height 200ms ease-in-out;
+    color: var(--main-200);
 }
 
 .nav__list {
     flex-direction: row;
+    align-items: center;
     gap: 3em;
+}
+
+.primary-navigation {
+    scale: 0;
+    opacity: 0;
     transition: all 250ms ease-in-out;
      transform-origin: right;
 }
 
-
-.header.closed .nav__list {
-    scale: 0;
-    opacity: 0;
+.header:hover {
+    height: auto;
 }
-
-.header.closed .nav::list {
+.header:hover >.primary-navigation {
     scale: 1;
     opacity: 1;
 }
 
+.header:hover > span {
+    opacity: 0;
+}
 
 .nav-list-item {
     color: var(--main-200);
@@ -73,6 +79,12 @@
     margin-right: 3em;
     display: block;
     position: relative;
+}
+
+
+.hamburger-visible-light {
+    background-color: var(--main-200);
+    order: 2;
 }
 
 .hamburger-visible,
@@ -100,11 +112,6 @@
     right: 0;
 }
 
-/*   MAKING IT APPEAR ON HOVER */
-.header.closed:hover {
-    height: 50px;
-    background-color: var(--accent-500);
-}
 
 
 }

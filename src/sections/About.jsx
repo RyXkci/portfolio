@@ -31,6 +31,7 @@ export default function About() {
           className='about__cta about-left__cta as-box-shadow'
           direction='left'
           content="vedi i miei lavori"
+          link="/#projects"
           />
 
         </div>
@@ -53,6 +54,7 @@ export default function About() {
           className='about__cta about-left__cta as-box-shadow'
           direction='right'
           content="contattami subito"
+          link="/#contact"
           />
       </div>
       </div>

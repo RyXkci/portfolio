@@ -1,11 +1,12 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 export default function Button ({type, style, link, content}) {
 
 return (
-        <a href={link} className={`btn ${type} ${style}`}>
+        <Link to={link} className={`btn ${type} ${style}`}>
         {content}
-      </a>
+      </Link>
       
     )
 }

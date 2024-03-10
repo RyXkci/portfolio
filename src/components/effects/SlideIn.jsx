@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 
 import Button from "../Button";
 
-export default function SlideIn({tag, className, direction, content}) {
+export default function SlideIn({tag, className, direction, content, link}) {
 const Tag = tag;
 const [isAnimated, setIsAnimated] = useState(false);
 const slideRef = useRef();
@@ -27,7 +27,7 @@ const animated = !isAnimated ? `has-slide-${direction}-animation` : "slide anima
 <Button 
 type="btn-bg"
 style="btn-ghost-dark"
-link="#"
+link={link}
 content={content}
 />
     

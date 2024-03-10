@@ -37,7 +37,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="home-hero has-gradient-bg">
+    <section id="homeHero" className="home-hero has-gradient-bg">
       <div className="home-hero__inner contained">
         {!timeoutSwitch ? (
           <h1 className="home-hero__title-small title text-light">{title}</h1>
