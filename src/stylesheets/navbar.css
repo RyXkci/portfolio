@@ -1,22 +1,25 @@
 .header {
-width: 100%;
-background-color: rgba(0, 0, 0, .5);
-height: 70px;
-position: fixed;
-z-index: 1000;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    height: 70px;
+    position: fixed;
+    z-index: 1000;
 }
 
 .nav__list {
-    background: rgba(7, 59, 76, .7);
-    backdrop-filter: blur(2rem);
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 3em;
+    padding: min(30vh, 10rem) 5rem;
+
+}
+
+.nav {
+    background: rgba(7, 59, 76, .7);
+    backdrop-filter: blur(2rem);
     position: fixed;
     inset: 0 0 0 30%;
-    /* z-index: 1000; */
-    padding: min(30vh, 10rem) 2rem;
-  transition: transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out;
 }
 
 .navigation-closed {
@@ -27,36 +30,26 @@ z-index: 1000;
     transform: translateX(0);
 }
 
-/* .nav__list {
-    position: fixed;
-    background: rgba(0, 0, 0, .5);
-    backdrop-filter: blur(2rem);
-    inset: 0 0 0 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    transform: translateX(100%);
-    display: flex;
-    flex-direction: column;
-    justify-content: centeR;
-    align-items: center;
-    gap: 1.3em;
-
-} */
 
 .nav-list-item {
     font-size: 3rem;
     color: var(--main-200);
+    position: relative;
+}
+
+.nav-list-item:before {
+    content:"-";
+    position: absolute;
+    left: -20px;
 }
 
 /*   HAMBURGER */
 
 .mobile-nav-toggle {
-position: absolute;
-top: 2em;
-right: 2em;
-z-index: 9999;
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    z-index: 9999;
 }
 
 .svg-inline--fa {
@@ -69,9 +62,21 @@ z-index: 9999;
 
 
 @media screen and (min-width: 798px) {
-.nav__list {
-    inset: 0 0 0 70%;
+    .nav {
+        inset: 0 0 0 70%;
+    }
+    .header {
+        height: 50px;
+    }
 }
 
-
+@media (orientation: landscape) {
+    .nav__list {
+        gap: 1em;
+        padding: min(30vh, 5rem) 5rem;
+    
+    }
+    .nav-list-item {
+        font-size: 2.5rem;
+    }
 }

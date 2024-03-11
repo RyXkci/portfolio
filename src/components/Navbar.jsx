@@ -22,13 +22,13 @@ export default function Navbar() {
         onClick={toggleNav}
         className="mobile-nav-toggle"
         aria-controls="navList"
-        aria-expanded="false"
+        aria-expanded={!isToggled ? "false" : "true"}
       >
         <span className="sr-only">Open menu</span>
         <span className="hamburger" aria-hidden="true"><FontAwesomeIcon icon={faBars} /></span>
       </button> 
-      <nav>
-        <ul id="navList" className={!isToggled ? "nav__list navigation-closed" : "nav__list navigation-open"}>
+      <nav className={!isToggled ? "nav navigation-closed" : "nav navigation-open"}>
+        <ul id="navList" className="nav__list">
             <li className="nav-list-item"><Link to="/#homeHero" className="nav-list-link">Home</Link></li>
             <li className="nav-list-item"><Link to="/#about" className="nav-list-link">Su di me</Link></li>
             <li className="nav-list-item"><Link to="/#projects" className="nav-list-link">Lavori</Link></li>
