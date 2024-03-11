@@ -21,7 +21,10 @@ entries.forEach((entry) => {
     }
 }, [])
 
+// STRING TEMPLATE LITERALS FOR SLIDE EFFECT CLASSES. CSS SLIDES FROM DIRECTION SPECIFIED
 const animated = !isAnimated ? `has-slide-${direction}-animation` : "slide animated transition-2"
+    
+    
     return (
 <Tag ref={slideRef} className={`${className} ${animated}`}>
 <Button 
@@ -31,9 +34,6 @@ link={link}
 content={content}
 />
     
-{/* <a href="#" className="about__cta-btn cta-btn btn-ghost-dark">
-              Vedi i miei lavori
-            </a> */}
 </Tag>
     )
 }

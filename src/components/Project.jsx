@@ -1,6 +1,7 @@
 export default function Project({direction, style, title, link}) {
 
     return (
+      // DYNAMIC CLASSNAMES. DIRECTON DETERMINES HOW CSS WILL SET THE GRID ROWS OR COLUMNS
         <article className={`project ${direction} project-${style}`}>
         <h3 className="project__title">{title}</h3>
         <div className="project__link-container">

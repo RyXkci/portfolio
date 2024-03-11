@@ -1,0 +1,34 @@
+.contact-links-container {
+    width: 100%;
+    height: auto;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2em;
+}
+
+.contact-links-light {
+    background-color: var(--accent-300);
+}
+
+.contact-links-container p {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.contact-links-light p {
+    color: var(--main-700)
+}
+
+.contact-icon svg {
+    color: inherit;
+    margin-right: .3em;
+}
+
+@media screen and (min-width: 798px) {
+    .contact-links-container {
+        flex-direction: row;
+    }
+}

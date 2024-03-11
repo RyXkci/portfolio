@@ -31,15 +31,12 @@
     grid-column: 2/ -1;
     grid-row: 2/3;
    overflow: hidden;
-    /* flex-direction: column;
-    align-items: center;
-    justify-content: center; */
  
 }
 
 .techs__list ul {
     display: grid;
-    /* 68% to ensure part of the bottom text still shows */
+    /* 47% to ensure part of the bottom text still shows */
     grid-auto-rows: 47%;
     place-items: center;
     overflow: auto;
@@ -54,21 +51,19 @@
     font-size: 4.5rem;
     color: var(--main-700);
     text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
-    /* margin-top: 50%;
-    margin-bottom: 50%; */
 }
 
 /*   SCROLLBAR */
 
 .techs__list ul::-webkit-scrollbar {
-    width: .8em;
+    width: 1em;
 }
 .techs__list ul::-webkit-scrollbar-track {
 background: rgba(242, 150, 47, .5);
 }
 
 .techs__list ul::-webkit-scrollbar-thumb {
-    background: rgba(7, 59, 76, 1);
+    background: var(--main-700);
 }
 
 .stuck {
@@ -82,7 +77,6 @@ background: rgba(242, 150, 47, .5);
 }
 
 .portfolio-info{
-    /* background-color: rgba(0, 0, 0, .5); */
     background-color: var(--accent-300);
     height: 100vh;
     width: 100%;
@@ -100,6 +94,8 @@ background: rgba(242, 150, 47, .5);
 }
 .portfolio-info__link {
     font-size: 4rem;
+    color: var(--main-700);
+    font-weight: bold;
 }
 
 @media screen and (min-width: 798px) {

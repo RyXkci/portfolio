@@ -1,15 +1,17 @@
 import { useState, useEffect, useRef } from "react";
 
+// IMPORTED EFFECT COMPONENTS. THEY TAKE HTML ELEMENTS AND APPLY ANIMATIONS. 
+// OWN COMPONENTS TO FACILITATE INTERSETIONOBSERVER.
 import FadeIn from "../components/effects/FadeIn";
 import SlideIn from "../components/effects/SlideIn";
 
+// DATA TO PASS TO ANIMATION COMPONENTS. AVOIDS HIGE STRINGS AS PROPS
 import aboutMeData from "../utils/aboutData.json";
 
 
 import "../stylesheets/about.css";
 
 export default function About() {
-  console.log(aboutMeData);
   return (
     <section id="about" className="about about-section">
       <div className="about__inner contained">
@@ -26,6 +28,8 @@ export default function About() {
               content={aboutMeData.aboutLeft.content}
             />
           </article>
+
+          {/* SLIDE IN EFFECT. DIRECTION PPROP DETERMINES WHICH DIRECTION IT SLIDES IN FROM */}
           <SlideIn
           tag='div'
           className='about__cta about-left__cta as-box-shadow'
@@ -49,6 +53,8 @@ export default function About() {
             content={aboutMeData.aboutRight.content}
           />
         </article>
+
+         {/* SLIDE IN EFFECT. DIRECTION PPROP DETERMINES WHICH DIRECTION IT SLIDES IN FROM */}
         <SlideIn
           tag='div'
           className='about__cta about-left__cta as-box-shadow'

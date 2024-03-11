@@ -65,6 +65,66 @@ body {
   box-shadow: 0 0 1px rgba(0, 0, 0, .3);
 }
 
+/*   ANIMATIONS */
+
+.has-fade-animation {
+  opacity: 0;
+
+}
+
+.has-slide-left-animation {
+transform: translateX(300px);
+opacity: 0;
+}
+
+.has-slide-right-animation {
+  transform: translateX(-300px);
+  opacity: 0;
+}
+
+
+/* TRANSITIONS IN OWN CLASS TO STOP THEM BEING OVERWRITTEN */
+.transition-1 {
+  transition: all 2s ease-in-out;
+}
+
+.transition-2 {
+  transition: all 1s ease-in-out;
+}
+
+/* ANIMATION EFFECT CLASSES */
+
+.faded {
+  opacity: 1;
+}
+
+.slide-animated {
+  transform: translate(0);
+}
+
+.has-link-hover {
+position: relative;
+}
+
+.has-link-hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 300ms ease-in;
+}
+
+.has-link-hover:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
 .btn {
   font-family: "Poppins", sans-serif;
   font-weight: bold;

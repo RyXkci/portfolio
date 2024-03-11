@@ -58,17 +58,11 @@ export default function Hero() {
           style="btn-fill-dark"
           link="/#projects"
           content="i miei lavori" />
-          {/* <a href="#" className="btn btn-fill-dark">
-            I miei lavori
-          </a> */}
            <Button
            type="btn-sm"
            style="btn-fill-light"
            link="/#about"
            content="su di me" />
-          {/* <a href="#" className="btn btn-fill-light">
-            Su di me
-          </a> */}
         </div>
       </div>
     </section>

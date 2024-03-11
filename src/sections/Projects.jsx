@@ -5,10 +5,10 @@ import { v4 as uuid } from "uuid";
 
 import Project from "../components/Project";
 
+// IMPORTING DATA TO BE RENDERED
 import projectData from '../utils/projectData.json'
 
 export default function Projects() {
-  console.log(projectData)
 
   const [projects, setProjects] = useState(projectData);
   
@@ -19,6 +19,8 @@ export default function Projects() {
           mieiProgetti.<span className="projects__title-span">Selezionati</span>
         </h1>
         <div className="projects-grid">
+          {/* MAPPING OVER PROJECT DATA */}
+          {/* DIRECTION SPECIFIES COLUMN OR ROW SPANS IN GRID. STYLE DETERMINES COLOR */}
          {projects.map((project) => (
            <Project
            key={uuid()}

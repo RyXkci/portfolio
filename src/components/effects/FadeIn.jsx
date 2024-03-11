@@ -6,12 +6,13 @@ const Tag = tag;
 
 const [isAnimated, setIsAnimated] = useState(false)
 const textEffectRef = useRef()
+
+// CSS CLASSES TO APPLY WHEN INTERSECTING
 const animation = !isAnimated ? "has-fade-animation" : "faded transition-1"
 
    useEffect(()=> {
      const textObserver = new IntersectionObserver(entries => {
          entries.forEach((entry) => {
-           console.log(entry.target)
           setIsAnimated(entry.isIntersecting)
 
          })
