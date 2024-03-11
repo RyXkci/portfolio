@@ -1,7 +1,7 @@
 import GitHub from '../assets/logos/GitHub.png'
 import LinkedIn from '../assets/logos/LinkedIn.webp'
 
-const techs = ["html5", "css3", "react", "wordpress", "nodejs", "express", "mongoDB"];
+const techs = ["html5", "css3", "react", "nodejs", "express", "mongoDB"];
 
 const logos = [
     {

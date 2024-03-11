@@ -11,14 +11,14 @@
     display: block;
   }
 
-  .project-light{
+  /* .project-light{
    outline: 5px solid var(--accent-500);
    outline-offset: 5px;;
   }
   .project-dark {
    outline: 5px solid var(--accent-300);
    outline-offset: 3px;;
-  }
+  } */
 
 .projects-section {
     background-color: var(--main-700);
