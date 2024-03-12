@@ -20,7 +20,7 @@ const logos = [
     {
         id: "3",
         src: Discord,
-        link: "https://discordapp.com/users/ryxkci",
+        link: "https://discordapp.com/users/821819097632342097",
         alt: "Discord logo"
     }
 ]
