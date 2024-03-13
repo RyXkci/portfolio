@@ -32,7 +32,9 @@ overflow-x: hidden;
 .about__cta {
     background-color: var(--accent-300);
     height: 20.5rem;
-    width: calc(100% + 4rem);
+    /* width: calc(100% + 2rem); */
+    width: 100%;
+    border-radius: 5px;
     padding: 2em;
     margin-top: 1em;
     display: flex;

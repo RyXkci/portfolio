@@ -20,8 +20,8 @@ const [links, setLinks] = useState([
     },
     {
         icon: mailIcon,
-        text: "rickybozzi@gmail.com",
-        link: "mailto:rickybozzi@gmail.com"
+        text: "ricardo@ricardobozzi.com",
+        link: "mailto:ricardo@ricardobozzi.com"
     }
 
 ])
