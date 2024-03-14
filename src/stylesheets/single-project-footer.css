@@ -1,0 +1,21 @@
+.single-project-footer {
+    width: 100%;
+    height: auto;
+    background-color: var(--main-700);
+}
+
+.single-project-footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3em;
+    margin: 0 auto;
+    padding: 1.3em;
+}
+
+.project-footer__link {
+    color: var(--main-200);
+    font-size: 3rem;
+    
+}

@@ -11,6 +11,7 @@
     text-align: center;
 border-bottom: 1px solid var(--main-700);
 margin-bottom: 2em;
+padding: .5em;
 }
 
 .project-section__inner {

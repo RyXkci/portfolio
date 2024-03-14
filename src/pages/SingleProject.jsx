@@ -1,13 +1,17 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
+// styleshet and utils imports
 import "../stylesheets/single-project.css";
 import projectData from "../utils/projectData.json";
+import { formatText } from "../utils/stringParser";
 
+// Component imports
 import LinksStripe from "../components/LinksStripe";
 import ContactStripe from "../components/ContactStripe";
+import SingleProjectFooter from "../components/SingleProjectFooter";
 
-import { formatText } from "../utils/stringParser";
+
 
 export default function SingleProject() {
   const { title } = useParams();
@@ -68,6 +72,9 @@ export default function SingleProject() {
                 <ContactStripe
                 style="light" />
             </section>
+            <div className="single-project-footer">
+              <SingleProjectFooter />
+            </div>
     </>
   );
 }
