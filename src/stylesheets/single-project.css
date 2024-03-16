@@ -5,6 +5,9 @@
     place-items: center;
     text-align: center;
 }
+.project-section {
+    background: var(--main-700);
+}
 .project-section__title {
     font-size: 4.5rem;
     line-height: 1.1;
@@ -26,6 +29,10 @@ padding: .5em;
 .project__info-text {
     font-size: 2rem;
     margin-bottom: 1.3em;
+}
+
+.project__links {
+    background: var(--main-700);
 }
 
 .project__links-title {

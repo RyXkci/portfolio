@@ -15,7 +15,7 @@
 }
 
 .nav {
-    background: rgba(7, 59, 76, .7);
+    background: rgba(61, 60, 60, .4);
     backdrop-filter: blur(2rem);
     position: fixed;
     inset: 0 0 0 30%;

@@ -11,14 +11,6 @@
     display: block;
   }
 
-  /* .project-light{
-   outline: 5px solid var(--accent-500);
-   outline-offset: 5px;;
-  }
-  .project-dark {
-   outline: 5px solid var(--accent-300);
-   outline-offset: 3px;;
-  } */
 
 .projects-section {
     background-color: var(--main-700);
@@ -36,11 +28,14 @@
 }
 
 .project-light {
-    background-color: var(--accent-300);
+    border: 1px solid var(--accent-300);
+    color: var(--accent-300);
 }
 
+
 .project-dark {
-    background-color: var(--accent-500);
+    border: 1px solid var(--accent-500);
+    color: var(--accent-500);
 }
 .hor {
     grid-column: span 2;
@@ -64,7 +59,6 @@
 .project__title {
     font-family: "Poppins", sans-serif;
     font-size: 2.5rem;
-    color: var(--main-700);
 }
 
 .project__description {
@@ -78,12 +72,15 @@
     text-transform: uppercase;
     font-size: 3rem;
     color: var(--main-700);
+    display: block;
+    height: 100%;
+    width: 100%;
 }
  /* Will sort out when done views and components */
-.project__link-container {
+ .project__link-container {
     position: absolute;
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,12 +89,13 @@
 }
 
 
-/* .project-dark .project__link-container {
+ .project-dark .project__link-container {
     background-color: var(--accent-300);
 }
 .project-light .project__link-container {
     background-color: var(--accent-500);
-} */
+}
+
 
 /* HOVER EFFECT */
 
@@ -106,6 +104,7 @@
         position: absolute;
         height: 90%;
         width: 30%;
+        border-radius: 5px;
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -113,15 +112,15 @@
         align-items: center;
         transform: rotate(90deg);
         opacity: 0;
-        transition: all 250ms ease-in-out;
+        transition: all 350ms ease-in-out;
     
     }
     
     .project-dark .project__link-container {
-        background-color: var(--accent-300);
+        background-color: var(--accent-500);
     }
     .project-light .project__link-container {
-        background-color: var(--accent-500);
+        background-color: var(--accent-300);
     }
     
     .project__link-container:hover, .project__link-container:active {
@@ -129,6 +128,10 @@
         opacity: 1;
         width: 90%;
     
+    }
+
+    .project__btn {
+        height: auto;
     }
     
 

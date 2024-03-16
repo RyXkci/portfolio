@@ -1,8 +1,9 @@
 :root {
-  --main-200: #f1f1e6;
-  --main-700: #073B4C;
-  --accent-300: #F2962F;
-  --accent-500: #84F9BD;
+  --main-700: #030203;
+  --main-200: #c3fcf2;
+  --accent-300: #c68300;
+  --accent-500: #00c9af;
+  --accent-700: #392d3e;
 }
 
 .sr-only {
@@ -11,14 +12,14 @@
 }
 
 body {
-  background: var(--accent-500);
+  /* background: var(--accent-500); */
   line-height: 1.6;
   font-family: "Roboto", sans-serif;
 }
 
 .has-gradient-bg {
   background: rgba(7, 59, 76, 1);
-  background: linear-gradient(180deg, rgba(242, 150, 47, 1) 5%, rgba(7, 59, 76, 1) 50%);
+  background: linear-gradient(180deg, rgba(0, 201, 175, 1) 5%, rgba(3, 2, 3, 1));
 }
 .title {
   font-family: "Poppins", sans-serif;
@@ -37,8 +38,12 @@ body {
   color: var(--main-200);
 }
 
-.title-light {
+.title-acc--light {
   color: var(--accent-300);
+}
+
+.title-acc--dark {
+  color: var(--accent-500);
 }
 .text-black {
   color: var(--main-700);
@@ -48,7 +53,7 @@ body {
   color: var(--accent-500);
 }
 
-.text-light {
+.text-white {
   color: var(--main-200);
 }
 
@@ -141,6 +146,7 @@ position: relative;
 }
 
 .btn-bg {
+  border-radius: 10px;
   font-size: 2rem;
   padding: 1.5em .5em;
 }
@@ -156,9 +162,12 @@ position: relative;
 }
 
 .btn-ghost-dark {
-  background-color: none;
-  color: var(--main-700);
-  border: 5px solid var(--accent-500);
+  color: var(--accent-500);
+  border: 3px solid var(--accent-500);
+}
+.btn-ghost-light {
+  color: var(--accent-300);
+  border: 3px solid var(--accent-300);
 }
 
 .contained {
@@ -175,7 +184,13 @@ position: relative;
 @media screen and (min-width: 798px) {
   .has-gradient-bg {
     background: rgb(7, 59, 76);
-    background: linear-gradient(90deg, rgba(7, 59, 76, 1) 5%, rgba(242, 150, 47, 1) 20%, rgba(7, 59, 76, 1) 50%);
+    background: linear-gradient(180deg, rgba(0, 201, 175, 1) 5%, rgba(3, 2, 3, 1));
+
+    background: linear-gradient(90deg, rgba(3, 2, 3, 1) 5%, rgba(0, 201, 175, 1) 20%, rgba(3, 2, 3, 1) 50%);
+    .has-gradient-bg {
+      background: #073b4c;
+      background: linear-gradient(90deg,#073b4c 5%,#f2962f 20%,#073b4c 50%);
+    }
   }
   btn {
     font-size: 1.7rem;

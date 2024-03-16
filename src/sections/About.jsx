@@ -19,12 +19,12 @@ export default function About() {
           <article className="about__content about-left-content">
             <FadeIn
               tag="h1"
-              className="title about__title title-dark"
+              className="title about__title title-acc--dark"
               content={aboutMeData.aboutLeft.title}
             />
             <FadeIn
               tag="p"
-              className="about__text text-dark"
+              className="about__text text-white"
               content={aboutMeData.aboutLeft.content}
             />
           </article>
@@ -32,7 +32,8 @@ export default function About() {
           {/* SLIDE IN EFFECT. DIRECTION PPROP DETERMINES WHICH DIRECTION IT SLIDES IN FROM */}
           <SlideIn
           tag='div'
-          className='about__cta about-left__cta as-box-shadow'
+          className='about__cta cta--dark about-left__cta as-box-shadow'
+          btnColor="dark"
           direction='left'
           content="vedi i miei lavori"
           link="/#projects"
@@ -44,12 +45,12 @@ export default function About() {
         <article className="about__content about-right-content">
           <FadeIn
             tag="h1"
-            className="title about__title title-dark"
+            className="title about__title title-acc--light"
             content={aboutMeData.aboutRight.title}
           />
           <FadeIn
             tag="p"
-            className="about__text text-dark"
+            className="about__text text-white"
             content={aboutMeData.aboutRight.content}
           />
         </article>
@@ -57,7 +58,8 @@ export default function About() {
          {/* SLIDE IN EFFECT. DIRECTION PPROP DETERMINES WHICH DIRECTION IT SLIDES IN FROM */}
         <SlideIn
           tag='div'
-          className='about__cta about-left__cta as-box-shadow'
+          className='about__cta cta--light about-left__cta as-box-shadow'
+          btnColor="light"
           direction='right'
           content="contattami subito"
           link="/#contact"

@@ -14,7 +14,7 @@
 }
 
 .about {
-    margin-bottom: 4em;
+    /* margin-bottom: 4em; */
     display: flex;
     gap: 2em;
     justify-content: center;
@@ -26,11 +26,12 @@
 display: flex;
 flex-direction: column;
 justify-content: center;
+gap: 2em;
 overflow-x: hidden;
 }
 
 .about__cta {
-    background-color: var(--accent-300);
+    /* background-color: var(--accent-500); */
     height: 20.5rem;
     /* width: calc(100% + 2rem); */
     width: 100%;
@@ -41,6 +42,14 @@ overflow-x: hidden;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.cta--dark {
+    border: 3px solid var(--accent-500);
+}
+
+.cta--light {
+    border: 1px solid var(--accent-300);
 }
 
 
