@@ -5,6 +5,7 @@ import "../stylesheets/home-hero.css";
 import Button from "../components/Button";
 
 import { techs } from "../utils/imports";
+import MovingDots from "../components/MovingDots";
 
 export default function Hero() {
   const [isAnimating, setIsAnimating] = useState(false);
@@ -37,8 +38,13 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="homeHero" className="home-hero has-gradient-bg">
+    <section id="homeHero" className="home-hero">
       <div className="home-hero__inner contained">
+        <MovingDots />
+
+      <p className="home-hero__text text-white">
+         Ricardo Bozzi
+        </p>
         {!timeoutSwitch ? (
           <h1 className="home-hero__title-small title text-white">{title}</h1>
         ) : (
@@ -47,9 +53,6 @@ export default function Hero() {
           </h1>
         )}
 
-        <p className="home-hero__text text-white">
-          Il mio nome è Ricardo Bozzi e benvenuti sul mio sito personale
-        </p>
 
         <div className="home-hero__buttons">
 
