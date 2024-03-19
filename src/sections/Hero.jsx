@@ -5,7 +5,7 @@ import "../stylesheets/home-hero.css";
 import Button from "../components/Button";
 
 import { techs } from "../utils/imports";
-import MovingDots from "../components/MovingDots";
+import MovingDotsRandom from "../components/effects/MovingDotsRandom";
 
 export default function Hero() {
   const [isAnimating, setIsAnimating] = useState(false);
@@ -38,9 +38,9 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="homeHero" className="home-hero">
-      <div className="home-hero__inner contained">
-        <MovingDots />
+    <section className="home-hero">
+      <div id="homeHero" className="home-hero__inner contained">
+        <MovingDotsRandom />
 
       <p className="home-hero__text has-outset-text-shadow has-glitch-effect">
          Ricardo Bozzi

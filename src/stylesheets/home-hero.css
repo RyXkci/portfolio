@@ -5,6 +5,8 @@
     place-items: center;
     padding: 2em;
     background: rgba(0, 0, 0, 1);
+    position: sticky;
+    top: 0;
     
 }
 
@@ -23,6 +25,7 @@ border-radius: 5px;
     position: relative;
 }
 
+/* CANVAS */
 .hero-canvas {
     position: absolute;
     height: 100%;

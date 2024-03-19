@@ -3,6 +3,7 @@ import '../stylesheets/contact.css'
 
 import ContactLinks from '../components/ContactLinks'
 import Socials from '../sections/Socials'
+import MovingDotsUp from '../components/effects/MovingDotsUp'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
@@ -29,6 +30,7 @@ const [links, setLinks] = useState([
     return (
         <div id="contact" className="contact">
             <section className="contact__inner contained">
+            <MovingDotsUp />
                 <h1 className="contact__title title-acc--light">contattamiOra()</h1>
                 <ContactLinks
                 style="light"

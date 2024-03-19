@@ -44,9 +44,9 @@ export default function Navbar() {
       >
         <ul id="navList" className="nav__list">
           <li className="nav-list-item has-link-hover">
-            <NavLink to="/#homeHero" className="nav-list-link" onClick={toggleNav}>
+            <Link to="/#homeHero" className="nav-list-link" onClick={toggleNav}>
               Home
-            </NavLink>
+            </Link>
           </li>
           <li className="nav-list-item has-link-hover">
             <Link  to="/#about" className="nav-list-link" onClick={toggleNav}>

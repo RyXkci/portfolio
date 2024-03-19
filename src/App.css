@@ -6,6 +6,12 @@
   --accent-700: #392d3e;
 }
 
+.main-sticky {
+  position: sticky;
+  top: 0;
+  height: 100%;
+}
+
 .sr-only {
   left: -1000vw;
   position: absolute;
@@ -24,11 +30,11 @@ body {
 
 .has-outset-text-shadow {
   /* color: rgba(0, 0, 0, 1); */
-  background: -webkit-linear-gradient(215deg, #000,#00c7ad);
+  background: -webkit-linear-gradient(215deg, #808080,#00c7ad);
   -webkit-background-clip: text;
   background-size: 60% 60%;
   animation: gradient-animation 6s ease infinite;
-  -webkit-text-stroke: 1px #0ff;
+  /* -webkit-text-stroke: 1px #00c7ad; */
   -webkit-text-fill-color: transparent;
 }
 

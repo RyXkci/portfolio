@@ -1,6 +1,6 @@
 import { useRef, useEffect } from "react"
 
-export default function MovingDots() {
+export default function MovingDotsRandom() {
 const canvasRef = useRef(null);
 const dots = useRef([])
 

@@ -8,6 +8,13 @@
     padding: 2em;
 }
 
+/* CANVAS */
+
+.contact-canvas {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
 .contact__inner {
     height: 100%;
     display: flex;

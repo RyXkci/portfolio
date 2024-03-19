@@ -10,12 +10,14 @@ export default function Home() {
     return (
         <>
         <Hero />
+    <main id="main" className="main-sticky">
      <About />
      <Projects />
      <Socials 
      style="dark"/>
      <Techs />
      <Contact />
+     </main>
         </>
     )
 
