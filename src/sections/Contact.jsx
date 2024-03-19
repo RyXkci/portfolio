@@ -29,7 +29,7 @@ const [links, setLinks] = useState([
     return (
         <div id="contact" className="contact">
             <section className="contact__inner contained">
-                <h1 className="contact__title title-light">contattamiOra()</h1>
+                <h1 className="contact__title title-acc--light">contattamiOra()</h1>
                 <ContactLinks
                 style="light"
                 links={links} />

@@ -79,5 +79,5 @@ useEffect(() => {
     return () => cancelAnimationFrame(animationFrameId);
   }, []); // Empty dependency array means this effect runs only once after the initial render
 
-  return <canvas className="hero-canvas" ref={canvasRef} />;
+  return <canvas ariahidden="true" className="hero-canvas" ref={canvasRef} />;
 }

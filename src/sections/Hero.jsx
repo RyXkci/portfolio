@@ -42,13 +42,13 @@ export default function Hero() {
       <div className="home-hero__inner contained">
         <MovingDots />
 
-      <p className="home-hero__text text-white">
+      <p className="home-hero__text has-outset-text-shadow has-glitch-effect">
          Ricardo Bozzi
         </p>
         {!timeoutSwitch ? (
-          <h1 className="home-hero__title-small title text-white">{title}</h1>
+          <h1 className="home-hero__title-small title has-outset-text-shadow">{title}</h1>
         ) : (
-          <h1 className="home-hero__title title text-white">
+          <h1 className="home-hero__title title has-outset-text-shadow">
             Frontend <span className="home-hero__subtitle white">Developer</span>
           </h1>
         )}
