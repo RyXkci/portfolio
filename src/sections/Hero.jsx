@@ -40,16 +40,16 @@ export default function Hero() {
   return (
     <section className="home-hero">
       <div id="homeHero" className="home-hero__inner contained">
-        <MovingDotsRandom />
+      
 
-      <p className="home-hero__text has-outset-text-shadow has-glitch-effect">
+      <p className="home-hero__text has-dark-text-stroke has-reveal-effect">
          Ricardo Bozzi
         </p>
         {!timeoutSwitch ? (
-          <h1 className="home-hero__title-small title has-outset-text-shadow">{title}</h1>
+          <h1 className="home-hero__title-small title has-dark-text-stroke">{title}</h1>
         ) : (
-          <h1 className="home-hero__title title has-outset-text-shadow">
-            Frontend <span className="home-hero__subtitle white">Developer</span>
+          <h1 className="home-hero__title title has-dark-text-stroke has-reveal-effect">
+            Frontend <span className="home-hero__subtitle has-light-text-stroke">Developer</span>
           </h1>
         )}
 
@@ -58,15 +58,16 @@ export default function Hero() {
 
           <Button
           type="btn-sm"
-          style="btn-fill-dark"
+          style="btn-ghost-dark"
           link="/#projects"
           content="i miei lavori" />
            <Button
            type="btn-sm"
-           style="btn-fill-light"
+           style="btn-ghost-light"
            link="/#about"
            content="su di me" />
         </div>
+        <MovingDotsRandom />
       </div>
     </section>
   );

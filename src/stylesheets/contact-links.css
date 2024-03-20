@@ -23,9 +23,12 @@
     color: var(--main-700)
 }
 
+.contact-icon {
+    display: block;
+}
+
 .contact-icon svg {
     color: inherit;
-    margin-right: .3em;
 }
 
 @media screen and (min-width: 798px) {

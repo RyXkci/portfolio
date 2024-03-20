@@ -15,7 +15,7 @@ export default function Projects() {
   return (
     <div id="projects" className="section projects-section">
       <section className="projects__inner">
-        <h1 className="title projects__title title-white">
+        <h1 className="title projects__title title-white has-reveal-effect">
           mieiProgetti.<span className="projects__title-span">Selezionati</span>
         </h1>
         <div className="projects-grid">
