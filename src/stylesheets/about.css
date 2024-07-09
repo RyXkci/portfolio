@@ -73,7 +73,6 @@ overflow-x: hidden;
         width: 30rem;
         max-height: 40rem;
         margin-top: 15rem;
-        justify-content: flex-end;
     }
 
     .about-right-content {
